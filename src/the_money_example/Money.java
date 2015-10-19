@@ -7,4 +7,5 @@ public class Money {
 		Money money = (Money) object;
 		return this.amount == money.amount;
 	}
+
 }
