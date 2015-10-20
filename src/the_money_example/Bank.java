@@ -2,8 +2,10 @@ package the_money_example;
 
 public class Bank {
 
-	public Money reduce(Expression sum, String string) {
-		return Money.dollar(10);
+	public Money reduce(Expression source,String to) {
+		Sum sum = (Sum) source;
+		int amount = sum.augend.amount + sum.addend.amount;
+		return new Money(amount, to);
 	}
 
 }
