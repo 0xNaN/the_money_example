@@ -1,6 +1,6 @@
 package the_money_example;
 
-public class Money {
+public class Money implements Expression{
 	protected int amount;
 	protected String currency;
 
@@ -34,7 +34,7 @@ public class Money {
 		return amount + " " + currency;
 	}
 
-	public Money plus(Money dollar) {
+	public Expression plus(Money dollar) {
 		return new Money(amount + dollar.amount, currency);
 	}
 }
