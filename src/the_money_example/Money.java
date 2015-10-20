@@ -1,6 +1,8 @@
 package the_money_example;
 
+
 public class Money implements Expression{
+
 	protected int amount;
 	protected String currency;
 
