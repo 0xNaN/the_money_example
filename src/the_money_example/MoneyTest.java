@@ -18,8 +18,4 @@ public class MoneyTest {
 		assertEquals("CHR", Money.franc(5).currency());
 	}
 	
-	@Test
-	public void testDifferentClassEquality() {
-		assertTrue(new Money(10, "CHR").equals(new Franc(10, "CHR")));
-	}
 }
