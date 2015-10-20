@@ -14,7 +14,7 @@ public class Money {
 	}
 
 	static Money franc(int amount) {
-		return new Money(amount, "CHR");
+		return new Money(amount, "CHF");
 	}
 
 	public boolean equals(Object object) {
